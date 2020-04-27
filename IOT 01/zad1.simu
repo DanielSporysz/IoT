@@ -1,0 +1,66 @@
+<circuit type="simulide_0.1">
+ 
+Node-21: 
+<item Show_id="false" labely="-24" hflip="1" valLabelx="0" objectName="Node-21" valLabRot="0" itemtype="Node" labelrot="0" id="Node-21" vflip="1" labelx="-16" rotation="0" x="-524" valLabely="0" y="-460"/>
+ 
+Node-17: 
+<item Show_id="false" labely="-24" hflip="1" valLabelx="0" objectName="Node-17" valLabRot="0" itemtype="Node" labelrot="0" id="Node-17" vflip="1" labelx="-16" rotation="0" x="-556" valLabely="0" y="-356"/>
+ 
+Node-13: 
+<item Show_id="false" labely="-24" hflip="1" valLabelx="0" objectName="Node-13" valLabRot="0" itemtype="Node" labelrot="0" id="Node-13" vflip="1" labelx="-16" rotation="0" x="-556" valLabely="0" y="-460"/>
+ 
+Push-11: 
+<item Show_id="false" labely="-24" hflip="1" valLabelx="0" objectName="Push-11" valLabRot="0" itemtype="Push" labelrot="0" id="Push-11" vflip="1" labelx="-16" rotation="0" x="-476" valLabely="0" y="-460"/>
+ 
+Capacitor-10: 
+<item Show_id="false" itemtype="Capacitor" labelrot="0" id="Capacitor-10" valLabRot="0" valLabely="8" labely="-24" y="-412" Capacitance="9.999999999999998" hflip="1" Unit=" nF" Show_Cap="true" rotation="270" x="-556" objectName="Capacitor-10" labelx="-16" valLabelx="-16" vflip="1"/>
+ 
+Resistor-9: 
+<item Show_id="false" itemtype="Resistor" labelrot="0" id="Resistor-9" valLabRot="0" Resistance="1" valLabely="6" labely="-24" y="-412" Show_res="true" hflip="1" Unit=" kΩ" rotation="270" x="-612" objectName="Resistor-9" labelx="-12" valLabelx="-16" vflip="1"/>
+ 
+Arduino Nano-3: 
+<item Show_id="true" labely="-20" hflip="1" valLabelx="0" objectName="Arduino Nano-3" valLabRot="0" program="Desktop/10dioda_kod.hex/10dioda_kod.hex.ino.standard.hex" itemtype="Arduino" Mhz="16" labelrot="0" id="Arduino Nano-3" vflip="1" labelx="0" rotation="0" x="-428" valLabely="0" y="-348"/>
+ 
+Led-2: 
+<item Show_id="false" itemtype="Led" Grounded="false" labelrot="0" MaxCurrent="0.03" id="Led-2" valLabRot="0" valLabely="0" Resistance="0.6" labely="-24" y="-284" hflip="-1" rotation="0" threshold="2.4" x="-500" objectName="Led-2" labelx="-16" valLabelx="0" vflip="1" Color="0"/>
+ 
+Resistor-1: 
+<item Show_id="false" itemtype="Resistor" labelrot="0" id="Resistor-1" valLabRot="0" Resistance="1" valLabely="5" labely="-24" y="-268" Show_res="true" hflip="1" Unit=" kΩ" rotation="-90" x="-580" objectName="Resistor-1" labelx="-12" valLabelx="-16" vflip="1"/>
+ 
+Connector-12: 
+<item pointList="-612,-428,-612,-460,-556,-460" Show_id="false" itemtype="Connector" labelrot="0" id="Connector-12" valLabRot="0" endpinid="Node-13-0" valLabely="0" enodeid="enode-20" labely="-24" y="-428" hflip="1" startpinid="Resistor-9-rPin" rotation="0" x="-612" objectName="Connector-12" labelx="-16" valLabelx="0" vflip="1"/>
+ 
+Connector-14: 
+<item pointList="-556,-460,-556,-428" Show_id="false" itemtype="Connector" labelrot="0" id="Connector-14" valLabRot="0" endpinid="Capacitor-10-rPin" valLabely="0" enodeid="enode-20" labely="-24" y="-460" hflip="1" startpinid="Node-13-2" rotation="0" x="-556" objectName="Connector-14" labelx="-16" valLabelx="0" vflip="1"/>
+ 
+Connector-15: 
+<item pointList="-556,-460,-524,-460" Show_id="false" itemtype="Connector" labelrot="0" id="Connector-15" valLabRot="0" endpinid="Node-21-0" valLabely="0" enodeid="enode-20" labely="-24" y="-460" hflip="1" startpinid="Node-13-1" rotation="0" x="-556" objectName="Connector-15" labelx="-16" valLabelx="0" vflip="1"/>
+ 
+Connector-16: 
+<item pointList="-612,-396,-612,-356,-556,-356" Show_id="false" itemtype="Connector" labelrot="0" id="Connector-16" valLabRot="0" endpinid="Node-17-0" valLabely="0" enodeid="enode-19" labely="-24" y="-396" hflip="1" startpinid="Resistor-9-lPin" rotation="0" x="-612" objectName="Connector-16" labelx="-16" valLabelx="0" vflip="1"/>
+ 
+Connector-18: 
+<item pointList="-556,-356,-556,-396" Show_id="false" itemtype="Connector" labelrot="0" id="Connector-18" valLabRot="0" endpinid="Capacitor-10-lPin" valLabely="0" enodeid="enode-19" labely="-24" y="-356" hflip="1" startpinid="Node-17-2" rotation="0" x="-556" objectName="Connector-18" labelx="-16" valLabelx="0" vflip="1"/>
+ 
+Connector-19: 
+<item pointList="-556,-356,-556,-308,-420,-308" Show_id="false" itemtype="Connector" labelrot="0" id="Connector-19" valLabRot="0" endpinid="Arduino Nano-3-GND0" valLabely="0" enodeid="enode-19" labely="-24" y="-356" hflip="1" startpinid="Node-17-1" rotation="0" x="-556" objectName="Connector-19" labelx="-16" valLabelx="0" vflip="1"/>
+ 
+Connector-20: 
+<item pointList="-420,-300,-524,-300,-524,-460" Show_id="false" itemtype="Connector" labelrot="0" id="Connector-20" valLabRot="0" endpinid="Node-21-1" valLabely="0" enodeid="enode-20" labely="-24" y="-300" hflip="1" startpinid="Arduino Nano-3-PD2" rotation="0" x="-420" objectName="Connector-20" labelx="-16" valLabelx="0" vflip="1"/>
+ 
+Connector-22: 
+<item pointList="-524,-460,-492,-460" Show_id="false" itemtype="Connector" labelrot="0" id="Connector-22" valLabRot="0" endpinid="Push-11-lnod" valLabely="0" enodeid="enode-20" labely="-24" y="-460" hflip="1" startpinid="Node-21-2" rotation="0" x="-524" objectName="Connector-22" labelx="-16" valLabelx="0" vflip="1"/>
+ 
+Connector-23: 
+<item pointList="-460,-460,-332,-460,-332,-308,-372,-308" Show_id="false" itemtype="Connector" labelrot="0" id="Connector-23" valLabRot="0" endpinid="Arduino Nano-3-V5V" valLabely="0" enodeid="enode-23" labely="-24" y="-460" hflip="1" startpinid="Push-11-rnod" rotation="0" x="-460" objectName="Connector-23" labelx="-16" valLabelx="0" vflip="1"/>
+ 
+Connector-31: 
+<item pointList="-420,-284,-436,-284,-436,-244,-580,-244,-580,-252" Show_id="false" itemtype="Connector" labelrot="0" id="Connector-31" valLabRot="0" endpinid="Resistor-1-lPin" valLabely="0" enodeid="enode-31" labely="-24" y="-284" hflip="1" startpinid="Arduino Nano-3-PD4" rotation="0" x="-420" objectName="Connector-31" labelx="-16" valLabelx="0" vflip="1"/>
+ 
+Connector-35: 
+<item pointList="-420,-292,-484,-292,-484,-284" Show_id="false" itemtype="Connector" labelrot="0" id="Connector-35" valLabRot="0" endpinid="Led-2-lPin" valLabely="0" enodeid="enode-35" labely="-24" y="-292" hflip="1" startpinid="Arduino Nano-3-PD3" rotation="0" x="-420" objectName="Connector-35" labelx="-16" valLabelx="0" vflip="1"/>
+ 
+Connector-36: 
+<item pointList="-516,-284,-580,-284" Show_id="false" itemtype="Connector" labelrot="0" id="Connector-36" valLabRot="0" endpinid="Resistor-1-rPin" valLabely="0" enodeid="enode-36" labely="-24" y="-284" hflip="1" startpinid="Led-2-rPin" rotation="0" x="-516" objectName="Connector-36" labelx="-16" valLabelx="0" vflip="1"/>
+ 
+</circuit>

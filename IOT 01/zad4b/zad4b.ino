@@ -14,6 +14,10 @@ void loop()
 {
     wartosc = map(analogRead(A0), 0, 1023, 0, 1000);
 
+    if(zmiana==-1){
+      wartosc = 999-wartosc;
+    }
+
     digitalWrite(12, HIGH);
 
     cyfra(wartosc % 10);

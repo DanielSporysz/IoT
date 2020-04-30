@@ -17,11 +17,11 @@ void setup()
 
 void loop()
 {
-    wartosc = map(analogRead(A0) , 0, 1023, 0, 181);
+    wartosc = map(analogRead(A0) , 0, 1023, 0, 1000);
     scaled_wartosc = map(analogRead(A0) , 0, 1023, 45, 144);
 
     if(zmiana==-1){
-      wartosc = 180 - wartosc;
+      wartosc = 999 - wartosc;
       scaled_wartosc = 188 - scaled_wartosc;
     }
 

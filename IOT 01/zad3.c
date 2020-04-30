@@ -11,8 +11,9 @@ void setup()
 
 void loop()
 {
-    if (licznik++ > 10)
+    if (licznik++ > 3)
     {
+        delay(1);
         wartosc += zmiana;
         if (wartosc > 999)
             wartosc = 0;
@@ -25,18 +26,17 @@ void loop()
 
     cyfra(wartosc % 10);
     digitalWrite(10, LOW);
-    delay(10);
+    delay(11);
     digitalWrite(10, HIGH);
-
 
     cyfra(wartosc % 100 / 10);
     digitalWrite(11, LOW);
-    delay(10);
+    delay(11);
     digitalWrite(11, HIGH);
 
     cyfra(wartosc / 100);
     digitalWrite(12, LOW);
-    delay(10);
+    delay(11);
 }
 
 void GdyPrzyciskStart()

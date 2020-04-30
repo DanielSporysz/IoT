@@ -7,28 +7,37 @@ void setup()
     for (int i = 3; i < 13; i++)
         pinMode(i, OUTPUT);
     attachInterrupt(0, GdyPrzyciskStart, RISING);
-    pinMode(A0, INPUT);
 }
 
 void loop()
 {
-    wartosc = map(analogRead(A0), 0, 1023, 0, 1000);
+    if (licznik++ > 3)
+    {
+        delay(1);
+        wartosc += zmiana;
+        if (wartosc > 999)
+            wartosc = 0;
+        if (wartosc < 0)
+            wartosc = 999;
+        licznik = 0;
+    }
 
     digitalWrite(12, HIGH);
 
     cyfra(wartosc % 10);
     digitalWrite(10, LOW);
-    delay(10);
+    delay(11);
     digitalWrite(10, HIGH);
+
 
     cyfra(wartosc % 100 / 10);
     digitalWrite(11, LOW);
-    delay(10);
+    delay(11);
     digitalWrite(11, HIGH);
 
     cyfra(wartosc / 100);
     digitalWrite(12, LOW);
-    delay(10);
+    delay(11);
 }
 
 void GdyPrzyciskStart()

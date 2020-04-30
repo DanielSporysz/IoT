@@ -1,18 +1,29 @@
-int licznik = 0;
-int wartosc = 0;
+#include <Servo.h>
+
+int wartosc;
+int scaled_wartosc;
 int zmiana = 1;
+
+Servo serwo;
 
 void setup()
 {
     for (int i = 3; i < 13; i++)
         pinMode(i, OUTPUT);
     attachInterrupt(0, GdyPrzyciskStart, RISING);
+    serwo.attach(13);
     pinMode(A0, INPUT);
 }
 
 void loop()
 {
-    wartosc = map(analogRead(A0), 0, 1023, 0, 1000);
+    wartosc = map(analogRead(A0) , 0, 1023, 0, 181);
+    scaled_wartosc = map(analogRead(A0) , 0, 1023, 45, 144);
+
+    if(zmiana==-1){
+      wartosc = 180 - wartosc;
+      scaled_wartosc = 188 - scaled_wartosc;
+    }
 
     digitalWrite(12, HIGH);
 
@@ -29,6 +40,8 @@ void loop()
     cyfra(wartosc / 100);
     digitalWrite(12, LOW);
     delay(10);
+
+    serwo.write(scaled_wartosc);
 }
 
 void GdyPrzyciskStart()
